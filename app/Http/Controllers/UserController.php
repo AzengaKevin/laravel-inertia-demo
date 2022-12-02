@@ -12,6 +12,8 @@ class UserController extends Controller
      */
     public function index()
     {
+        sleep(2);
+        
         return Inertia::render('Users/Index', [
             'appName' => config('app.name')
         ]);

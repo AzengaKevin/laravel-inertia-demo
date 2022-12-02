@@ -1,6 +1,7 @@
 import { createApp, h } from 'vue'
 import * as bootstrap from 'bootstrap';
 import { createInertiaApp } from '@inertiajs/inertia-vue3'
+import { InertiaProgress } from '@inertiajs/progress'
 
 window.bootstrap = bootstrap;
 
@@ -11,4 +12,8 @@ createInertiaApp({
       .use(plugin)
       .mount(el)
   },
+})
+
+InertiaProgress.init({
+  color: 'teal'
 })
