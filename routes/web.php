@@ -21,3 +21,9 @@ Route::get('/', fn ()  => inertia('Welcome', [
 
 Route::resource('users', UserController::class)->only(['index']);
 Route::get('/settings', SettingsController::class)->name('settings');
+
+Route::post('/logout', function(){
+    
+    dd("Destroying Authenticated User Session");
+
+})->name('logout');
