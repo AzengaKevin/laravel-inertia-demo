@@ -1,19 +1,12 @@
 <script setup>
-import { Link } from "@inertiajs/inertia-vue3";
-import Navbar from "../Shared/Navbar.vue";
-
+import Layout from "../Shared/Layout.vue";
 defineProps({
     appName: String,
 });
 </script>
 <template>
-    <header class="shadow-sm">
-        <Navbar :app-name="appName" />
-    </header>
-    <main>
-        <div class="container py-4">
-            <h1>Learning Laravel Inertia</h1>
-            <p class="lead">The modern monolith</p>
-        </div>
-    </main>
+    <Layout :app-name="appName">
+        <h1>Welcome</h1>
+        <p class="lead">The modern monolith</p>
+    </Layout>
 </template>
