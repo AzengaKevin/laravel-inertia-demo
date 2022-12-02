@@ -1,13 +1,10 @@
 <script setup>
 import Navbar from './Navbar.vue';
 
-defineProps({
-    appName: String
-})
 </script>
 <template>
     <header class="shadow-sm">
-        <Navbar :app-name="appName" />
+        <Navbar />
     </header>
 
     <main>

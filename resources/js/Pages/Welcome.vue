@@ -1,11 +1,8 @@
 <script setup>
 import Layout from "../Shared/Layout.vue";
-defineProps({
-    appName: String,
-});
 </script>
 <template>
-    <Layout :app-name="appName">
+    <Layout>
         <h1>Welcome</h1>
         <p class="lead">The modern monolith</p>
     </Layout>

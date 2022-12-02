@@ -2,14 +2,11 @@
 import { Link } from "@inertiajs/inertia-vue3"
 import CustomLink from "./CustomLink.vue";
 
-defineProps({
-    appName: String
-})
 </script>
 <template>
     <nav class="navbar navbar-light navbar-expand-md bg-light">
         <div class="container">
-            <span class="navbar-brand">{{ appName }}</span>
+            <span class="navbar-brand">{{ $page.props.appName }}</span>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">

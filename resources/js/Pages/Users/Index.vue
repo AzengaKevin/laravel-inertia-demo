@@ -2,12 +2,11 @@
 import { Link } from "@inertiajs/inertia-vue3";
 import Layout from "../../Shared/Layout.vue";
 defineProps({
-    appName: String,
     time: String
 });
 </script>
 <template>
-    <Layout :app-name="appName">
+    <Layout>
         <h1>Users</h1>
         <p class="lead">Table of users</p>
 
